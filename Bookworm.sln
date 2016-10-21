@@ -1,0 +1,41 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{01C83F57-0A8F-40EF-8E9D-57A4EC6F75DC}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{7A91A6D5-E262-4CA2-AC08-ED045BA6A29A}"
+	ProjectSection(SolutionItems) = preProject
+		global.json = global.json
+	EndProjectSection
+EndProject
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "DotNetBytes.Bookworm.Core", "src\DotNetBytes.Bookworm.Core\DotNetBytes.Bookworm.Core.xproj", "{02F3473A-FB04-4E54-AD55-575F79A50329}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{EF49F9DB-21D2-417A-82D9-26FE604F63B5}"
+EndProject
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "DotNetBytes.Bookworm.Tests", "test\DotNetBytes.Bookworm.Tests\DotNetBytes.Bookworm.Tests.xproj", "{059527A2-1899-4947-97BA-8E2DDC7A8FA6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{02F3473A-FB04-4E54-AD55-575F79A50329}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{02F3473A-FB04-4E54-AD55-575F79A50329}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{02F3473A-FB04-4E54-AD55-575F79A50329}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{02F3473A-FB04-4E54-AD55-575F79A50329}.Release|Any CPU.Build.0 = Release|Any CPU
+		{059527A2-1899-4947-97BA-8E2DDC7A8FA6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{059527A2-1899-4947-97BA-8E2DDC7A8FA6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{059527A2-1899-4947-97BA-8E2DDC7A8FA6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{059527A2-1899-4947-97BA-8E2DDC7A8FA6}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{02F3473A-FB04-4E54-AD55-575F79A50329} = {01C83F57-0A8F-40EF-8E9D-57A4EC6F75DC}
+		{059527A2-1899-4947-97BA-8E2DDC7A8FA6} = {EF49F9DB-21D2-417A-82D9-26FE604F63B5}
+	EndGlobalSection
+EndGlobal

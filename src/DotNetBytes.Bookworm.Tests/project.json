@@ -1,0 +1,20 @@
+{
+  "version": "1.0.0-*",
+  "testRunner": "xunit",
+
+  "resource": [
+    "Samples/XlsxEmpty.xlsx"
+  ],
+
+  "dependencies": {
+    "DotNetBytes.Bookworm.Core": "1.0.0-*",
+    "NETStandard.Library": "1.6.0",
+    "xunit": "2.2.0-beta3-build3402"
+  },
+
+  "frameworks": {
+    "netstandard1.6": {
+      "imports": "dnxcore50"
+    }
+  }
+}
