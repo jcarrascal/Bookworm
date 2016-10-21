@@ -1,14 +1,12 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.IO;
-using System.Linq;
-using System.Threading.Tasks;
-using System.Xml.Linq;
 
 namespace DotNetBytes.Bookworm.Core
 {
     public class Workbook
     {
+        public string[] SheetNames { get; private set; }
+
         public static Workbook Load(Stream inputStream)
         {
             if (inputStream == null)
@@ -31,7 +29,5 @@ namespace DotNetBytes.Bookworm.Core
 
             throw new NotImplementedException();
         }
-
-        public string[] SheetNames { get; private set; }
     }
 }
