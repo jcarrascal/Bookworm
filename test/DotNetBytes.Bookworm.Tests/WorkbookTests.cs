@@ -14,15 +14,14 @@ namespace DotNetBytes.Bookworm.Tests
             using (Stream stream = TestHelper.GetResourceStream("Samples/XlsxEmpty.xlsx"))
             {
                 Workbook workbook = Workbook.Load(stream);
-                Assert.That(workbook.SheetNames, Is.EquivalentTo(new string[] { "Sheet1" }));
+                Assert.That(workbook.Sheets, Is.EquivalentTo(new string[] { "Sheet1" }));
             }
         }
 
         [Test]
-        public void WhenGivenANullStreamOrBinaryReader_ThenThrowsAnArgumentNullException()
+        public void WhenGivenANullStream_ThenThrowsAnArgumentNullException()
         {
             Assert.Throws<ArgumentNullException>(() => Workbook.Load((Stream)null));
-            Assert.Throws<ArgumentNullException>(() => Workbook.Load((BinaryReader)null));
         }
     }
 }

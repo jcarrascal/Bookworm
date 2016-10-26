@@ -1,11 +1,12 @@
 ﻿using System;
 using System.IO;
+using DotNetBytes.Bookworm.Core.Xlsx;
 
 namespace DotNetBytes.Bookworm.Core
 {
     public class Workbook
     {
-        public string[] SheetNames { get; private set; }
+        public string[] Sheets { get; protected set; }
 
         public static Workbook Load(Stream inputStream)
         {
@@ -14,20 +15,7 @@ namespace DotNetBytes.Bookworm.Core
                 throw new ArgumentNullException(nameof(inputStream));
             }
 
-            using (var binaryReader = new BinaryReader(inputStream))
-            {
-                return Load(binaryReader);
-            }
-        }
-
-        public static Workbook Load(BinaryReader binaryReader)
-        {
-            if (binaryReader == null)
-            {
-                throw new ArgumentNullException(nameof(binaryReader));
-            }
-
-            throw new NotImplementedException();
+            return new XlsxWorkbook(inputStream);
         }
     }
 }
